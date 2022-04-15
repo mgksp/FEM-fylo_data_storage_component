@@ -11,12 +11,56 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Fylo data storage component</title>
   </head>
   <body>
-    You've used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+    <main class="grid-container">
+      <div class="data-storage-component">
+        <div class="menu-card">
+          <img src="./images/logo.svg" alt="logo" class="menu-card__logo" />
+          <div class="menu-card__menu">
+            <button class="menu-card__menu__menu-item">
+              <img src="./images/icon-document.svg" alt="document" />
+            </button>
+            <button class="menu-card__menu__menu-item">
+              <img src="./images/icon-folder.svg" alt="folder" />
+            </button>
+            <button class="menu-card__menu__menu-item">
+              <img src="./images/icon-upload.svg" alt="upload" />
+            </button>
+          </div>
+        </div>
+        <div class="data-card">
+          <div class="data-card__desc">
+            You've used <span class="bold">815 GB</span> of your storage
+          </div>
+          <div class="data-card__progress-bar">
+            <div class="data-card__progress-bar__outer-bar">
+              <div class="data-card__progress-bar__inner-bar">
+                <div class="data-card__progress-bar__inner-bar__shape"></div>
+              </div>
+            </div>
+            <div class="data-card__progress-bar__legends bold">
+              <p>0GB</p>
+              <p>1000GB</p>
+            </div>
+          </div>
+          <div class="data-card__data-left">
+            <span class="bold">185 </span> GB LEFT
+            <div class="data-card__data-left__shape"></div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer class="attribution">
       Challenge by
@@ -27,3 +71,4 @@
     </footer>
   </body>
 </html>
+
