@@ -6,6 +6,7 @@
   --grayish-blue: hsl(229, 7%, 55%);
   --dark-blue: hsl(228, 56%, 26%);
   --very-dark-blue: hsl(229, 57%, 11%);
+  --very-dark-blue-wo: hsl(229, 57%, 11%, 0.6);
 
   --gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
 }
@@ -99,10 +100,10 @@ body {
   &__progress-bar {
     &__outer-bar {
       margin-bottom: 1rem;
-      height: 1.6rem;
-      background-color: var(--very-dark-blue);
+      height: 2rem;
+      background-color: var(--very-dark-blue-wo);
       border-radius: 1rem;
-      padding: 2px;
+      padding: 3px;
     }
 
     &__inner-bar {
@@ -110,7 +111,7 @@ body {
       width: 81.5%;
       background-image: var(--gradient);
       border-radius: 1rem;
-      padding: 2px;
+      padding: 3px;
 
       &__shape {
         height: 8px;
@@ -141,6 +142,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.8rem;
+    font-size: 1.3rem;
 
     & span {
       color: var(--very-dark-blue);
