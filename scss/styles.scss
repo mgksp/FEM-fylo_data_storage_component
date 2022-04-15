@@ -38,7 +38,7 @@ body {
   display: grid;
   grid-template-columns:
     minmax(2.4rem, 1fr)
-    minmax(0, 111rem)
+    minmax(0, 92rem)
     minmax(2.4rem, 1fr);
   place-items: center;
 }
@@ -50,7 +50,7 @@ body {
   gap: 1.6rem;
 
   @include breakpoint($first) {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 3fr;
     gap: 3rem;
     align-items: end;
   }
