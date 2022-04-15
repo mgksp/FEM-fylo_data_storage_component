@@ -107,6 +107,22 @@ body {
 .data-card__desc {
   margin-bottom: 2rem;
 }
+@-webkit-keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 81.5%;
+  }
+}
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 81.5%;
+  }
+}
 .data-card__progress-bar__outer-bar {
   margin-bottom: 1rem;
   height: 2rem;
@@ -120,6 +136,8 @@ body {
   background-image: var(--gradient);
   border-radius: 1rem;
   padding: 3px;
+  -webkit-animation: progress 500ms ease-in;
+          animation: progress 500ms ease-in;
 }
 .data-card__progress-bar__inner-bar__shape {
   height: 8px;

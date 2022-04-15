@@ -97,6 +97,15 @@ body {
     margin-bottom: 2rem;
   }
 
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 81.5%;
+    }
+  }
+
   &__progress-bar {
     &__outer-bar {
       margin-bottom: 1rem;
@@ -112,6 +121,7 @@ body {
       background-image: var(--gradient);
       border-radius: 1rem;
       padding: 3px;
+      animation: progress 500ms ease-in;
 
       &__shape {
         height: 8px;
