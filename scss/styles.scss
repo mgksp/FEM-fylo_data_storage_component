@@ -160,14 +160,14 @@ body {
     }
 
     @include breakpoint($first) {
-      top: -22%;
+      top: -30%;
       right: 3.8rem;
       transform: translateX(0);
 
       &__shape {
         position: inherit;
-        width: 2.4rem;
-        height: 2.4rem;
+        width: 3rem;
+        height: 3rem;
         background-color: white;
         clip-path: polygon(100% 0, 0 0, 100% 100%);
         top: 85%;

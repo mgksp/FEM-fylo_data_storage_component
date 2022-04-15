@@ -174,14 +174,14 @@ body {
 }
 @media only screen and (min-width: 900px) {
   .data-card__data-left {
-    top: -22%;
+    top: -30%;
     right: 3.8rem;
     transform: translateX(0);
   }
   .data-card__data-left__shape {
     position: inherit;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 3rem;
+    height: 3rem;
     background-color: white;
     -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
             clip-path: polygon(100% 0, 0 0, 100% 100%);
